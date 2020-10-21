@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "100889323474",
+    "firebase_url": "https://realsell-1f65f.firebaseio.com",
+    "project_id": "realsell-1f65f",
+    "storage_bucket": "realsell-1f65f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100889323474:android:619b58f59a53eb8115ca0b",
+        "android_client_info": {
+          "package_name": "com.weselleverything.realsell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100889323474-n2io0hlf4bin05eighb7d5p3lb2v6bjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.weselleverything.realsell",
+            "certificate_hash": "a80316c891dfff5b3171a993c1f6c04a0d7c23f4"
+          }
+        },
+        {
+          "client_id": "100889323474-d66th4gl58l0kuafec3h25l6j8gdtof8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxb0oMzPQFKPs1nfQkHhjTxtll7e4f0Ck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100889323474-d66th4gl58l0kuafec3h25l6j8gdtof8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
