@@ -25,8 +25,6 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.opencensus.tags.Tag;
-
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText mFullName, mEmail, mPassword,mPhone;
@@ -41,12 +39,11 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_register);
-        getSupportActionBar ().hide ();
 
         mFullName = findViewById (R.id.FullName);
         mEmail = findViewById (R.id.Email);
         mPassword = findViewById (R.id.Password);
-        mPhone = findViewById (R.id.phone);
+        mPhone = findViewById (R.id.watch);
         mRegisterBtn = findViewById (R.id.registerBtn);
         mLoginBtn = findViewById (R.id.createText);
 
