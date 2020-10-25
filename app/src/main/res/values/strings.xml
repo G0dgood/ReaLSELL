@@ -1,4 +1,7 @@
-<resources>
+ <resources>
     <string name="app_name">ReaLSELL</string>
+     <string name="navigation_drawer_open">Open navigation drawer</string>
+     <string name="navigation_drawer_close">Close navigation drawer</string>
+     <string name="www_realsell_com_ng">www.realsell.com.ng</string>
 
-</resources>
+ </resources>

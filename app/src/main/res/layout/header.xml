@@ -11,7 +11,7 @@
         android:layout_width="85dp"
         android:layout_height="85dp"
         android:src="@drawable/realsell_three"/>
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="www.realsell.com.ng"
+        android:text="@string/www_realsell_com_ng"
         android:textSize="14sp"
         android:fontFamily="@font/roboto_mono"/>
 
