@@ -5,15 +5,14 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/home_icon"
             android:title="Home" />
-
-<!--        <item-->
-<!--            android:id="nav_laptop"-->
-<!--            android:icon="@drawable/laptop_icon"-->
-<!--            android:title="Laptop"/>-->
         <item
             android:id="@+id/nav_shoe"
             android:icon="@drawable/shoe_in_icon"
             android:title="Shoe" />
+<!--        <item-->
+<!--            android:id="nav_laptops"-->
+<!--            android:icon="@drawable/laptop_icon"-->
+<!--            android:title="Laptop" />-->
         <item
             android:id="@+id/nav_watch"
             android:icon="@drawable/watch_icon"
@@ -27,14 +26,14 @@
             android:icon="@drawable/dress_icon"
             android:title="Dress" />
     </group>
-    <group android:checkableBehavior="single">
-        <item
-            android:title="Profil">
-            <menu>
-                <item
-                    android:id="@+id/nav_login"
-                    android:icon="@drawable/login_in"
-                    android:title="Login" />
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+<!--                <item-->
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:icon="@drawable/login_in"-->
+<!--                    android:title="Login" />-->
                 <item
                     android:id="@+id/nav_profile"
                     android:icon="@drawable/profile_pro"
@@ -43,10 +42,9 @@
                     android:id="@+id/nav_logout"
                     android:icon="@drawable/logout_out"
                     android:title="Logout" />
-            </menu>
-        </item>
-
-    </group>
+            </group>
+        </menu>
+    </item>
 
     <item android:title="Communicate">
         <menu>
@@ -58,8 +56,6 @@
                 android:id="@+id/nav_rate"
                 android:icon="@drawable/rate_icon"
                 android:title="Rate" />
-
         </menu>
-
     </item>
 </menu>
