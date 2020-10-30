@@ -1,7 +1,14 @@
 <resources>
+    <string name="fragment_search">Search</string>
+    <string name="fragment_watch_list">Watch List</string>
+    <string name="fragment_post">Post</string>
+    <string name="fragment_account">Account</string>
+
+
     <string name="app_name">ReaLSELL</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="www_realsell_com_ng">www.realsell.com.ng</string>
+    <string name="lorem_ipsum">lorem_ipsem</string>
 
 </resources>

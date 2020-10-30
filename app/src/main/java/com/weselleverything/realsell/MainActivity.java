@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 break;
             case R.id.nav_shoe:
-                Intent intent = new Intent(MainActivity.this, shoes.class);
+                Intent intent = new Intent(MainActivity.this,SearchActivity.class);
                 startActivity(intent);
                 break;
             case R.id.nav_share:
@@ -83,6 +83,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
+        return true;  
     }
 }
