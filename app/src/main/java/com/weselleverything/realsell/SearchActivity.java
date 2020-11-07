@@ -58,7 +58,8 @@ public class SearchActivity extends AppCompatActivity {
     public void getVerifyPermissions() {
         Log.d(TAG, "verifyPermission: ask user for permission");
         String[] Permissions = {Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.CAMERA};
 
         if (ContextCompat.checkSelfPermission(this.getApplicationContext(),
                 Permissions[0]) == PackageManager.PERMISSION_GRANTED

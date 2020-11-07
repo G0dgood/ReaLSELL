@@ -14,12 +14,12 @@
         android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/email"
+        android:drawableStart="@drawable/email"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textPersonName"
+        android:background="@drawable/white_onclick_grey"
         android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
         android:textColorHint="@android:color/darker_gray"
         android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
@@ -27,17 +27,19 @@
         app:layout_constraintBottom_toTopOf="@+id/Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey"
+        android:drawableStart="@drawable/password"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="password"
+        android:hint="@string/password"
         android:inputType="textPersonName"
         android:textColorHighlight="@color/common_google_signin_btn_text_dark_focused"
         android:textColorHint="@android:color/darker_gray"
@@ -46,16 +48,17 @@
         app:layout_constraintBottom_toTopOf="@+id/loginBtn"
         app:layout_constraintEnd_toEndOf="@+id/Email"
         app:layout_constraintStart_toStartOf="@+id/Email"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/button_background"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey_two"
         android:fontFamily="@font/roboto_mono"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#33395B"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/createText"
@@ -70,7 +73,7 @@
         android:layout_marginTop="32dp"
         android:elevation="10dp"
         android:fontFamily="@font/belgrano"
-        android:text="New User? Create Account"
+        android:text="@string/new_user_create_account"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#33395B"
         android:textSize="24sp"
@@ -97,11 +100,10 @@
         android:layout_height="101dp"
         android:layout_margin="10dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
-        android:paddingLeft="10dp"
-        android:text="Hello there welcome back"
+        android:paddingStart="10dp"
+        android:text="@string/hello_there_welcome_back"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#33395B"
         android:textSize="40sp"
@@ -124,6 +126,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:srcCompat="@drawable/realsell_two" />
+        app:srcCompat="@drawable/realsell_two"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

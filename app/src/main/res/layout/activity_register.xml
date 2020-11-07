@@ -9,79 +9,86 @@
 
     <EditText
         android:id="@+id/FullName"
+        android:background="@drawable/white_onclick_grey"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:drawableLeft="@drawable/user"
+        android:drawableStart="@drawable/user"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="User name"
+        android:hint="@string/user_name"
         android:inputType="textPersonName"
         android:textColorHint="@android:color/darker_gray"
         android:textColorLink="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Email"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/email"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey"
+        android:drawableStart="@drawable/email"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textPersonName"
         android:textColorHint="@android:color/darker_gray"
         android:textColorLink="@color/common_google_signin_btn_text_dark_focused"
         app:layout_constraintEnd_toEndOf="@+id/FullName"
         app:layout_constraintStart_toStartOf="@+id/FullName"
-        app:layout_constraintTop_toBottomOf="@+id/FullName" />
+        app:layout_constraintTop_toBottomOf="@+id/FullName"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/password"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey"
+        android:drawableStart="@drawable/password"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="password"
+        android:hint="@string/password"
         android:inputType="textPersonName"
         android:textColorHint="@android:color/darker_gray"
         android:textColorLink="@color/ic_launcher_background"
         android:textCursorDrawable="@android:color/holo_red_light"
         app:layout_constraintEnd_toEndOf="@+id/Email"
         app:layout_constraintStart_toStartOf="@+id/Email"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/watch"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:drawableLeft="@drawable/phone"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey"
+        android:drawableStart="@drawable/phone"
         android:ems="10"
         android:fontFamily="@font/roboto_mono"
-        android:hint="Phone"
+        android:hint="@string/phone"
         android:inputType="textPersonName"
         android:textColorHint="@android:color/darker_gray"
         android:textColorLink="@android:color/black"
         app:layout_constraintEnd_toEndOf="@+id/Password"
         app:layout_constraintStart_toStartOf="@+id/Password"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/Password"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/registerBtn"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_background"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/white_onclick_grey_two"
         android:fontFamily="@font/roboto_mono"
-        android:text="Register"
+        android:text="@string/register"
         android:textColor="#33395B"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/watch"
@@ -97,7 +104,7 @@
         android:layout_marginEnd="16dp"
         android:elevation="10dp"
         android:fontFamily="@font/belgrano"
-        android:text="Already Registered? Login Here"
+        android:text="@string/already_registered_login_here"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#33395B"
@@ -111,15 +118,15 @@
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="187dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="93dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createText"/>
+        app:layout_constraintTop_toBottomOf="@+id/createText" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -131,15 +138,15 @@
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/realsell_two" />
+        app:srcCompat="@drawable/realsell_two"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/belgrano"
-        android:text="WELCOME"
+        android:text="@string/welcome"
         android:textColor="#33395B"
         android:textSize="36sp"
         android:transitionName="logo_text"

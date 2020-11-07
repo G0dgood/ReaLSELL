@@ -1,14 +1,74 @@
 <resources>
-    <string name="fragment_search">Search</string>
-    <string name="fragment_watch_list">Watch List</string>
-    <string name="fragment_post">Post</string>
-    <string name="fragment_account">Account</string>
+<string name="fragment_search" translatable="false">Search</string>
+<string name="fragment_watch_list" translatable="false">Watch List</string>
+<string name="fragment_post" translatable="false">Post</string>
+<string name="fragment_account" translatable="false">Account</string>
+<string name="fragment_view_post" translatable="false">Fragment</string>
+
+<string name="app_name" translatable="false">ReaLSELL</string>
+<string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+<string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+<string name="www_realsell_com_ng" translatable="false">www.realsell.com.ng</string>
 
 
-    <string name="app_name">ReaLSELL</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="www_realsell_com_ng">www.realsell.com.ng</string>
-    <string name="lorem_ipsum">lorem_ipsem</string>
+<!-- Dialog Names -->
+<string name="dialog_select_photo" translatable="false">SelectPhoto</string>
+
+<!-- Database nodes -->
+<string name="node_users" translatable="false">users</string>
+<string name="node_posts" translatable="false">posts</string>
+<string name="node_elasticsearch" translatable="false">elasticsearch</string>
+<string name="node_watch_list" translatable="false">watch_list</string>
+
+
+<!-- Database field names -->
+<string name="field_password" translatable="false">password</string>
+<string name="field_user_id" translatable="false">user_id</string>
+<string name="field_post_id" translatable="false">post_id</string>
+
+
+<!-- Intent extras and Bundle arguments -->
+<string name="arg_post_id" translatable="false">arg_post_id</string>
+
+<!-- Shared Preferenes -->
+<string name="preferences_country" translatable="false">preferences_country</string>
+<string name="preferences_state_province" translatable="false">preferences_state_province</string>
+<string name="preferences_city" translatable="false">preferences_city</string>
+
+
+<string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="choose_photo_from_memory">choose photo from memory</string>
+        <string name="take_photo">Take photo</string>
+        <string name="user_name">User name</string>
+        <string name="phone">Phone</string>
+        <string name="register">Register</string>
+        <string name="already_registered_login_here">Already Registered? Login Here</string>
+        <string name="welcome">WELCOME</string>
+        <string name="email">Email</string>
+        <string name="password">password</string>
+        <string name="login">Login</string>
+        <string name="new_user_create_account">New User? Create Account</string>
+        <string name="hello_there_welcome_back">Hello there welcome back</string>
+        <string name="title">Title</string>
+        <string name="description">Description</string>
+        <string name="price">Price</string>
+        <string name="country">Country</string>
+        <string name="state_province_region">State/Province/Region</string>
+        <string name="city">City</string>
+        <string name="your_contact_email">Your contact email</string>
+        <string name="post">post</string>
+
 
 </resources>

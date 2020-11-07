@@ -27,8 +27,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_baseline_camera_alt_24"
-                    android:contentDescription="TODO" />
+                    android:src="@drawable/ic_baseline_camera_alt_24" />
 
 
                 <RelativeLayout
@@ -45,14 +44,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
                         android:background="@null"
-                        android:hint="@string/title"
+                        android:hint="Title"
                         android:maxLines="2"
                         android:padding="10dp"
-                        android:textColor="#000"
-                        android:autofillHints=""
-                        android:inputType="text" />
+                        android:textColor="#000" />
 
                 </RelativeLayout>
 
@@ -80,11 +77,9 @@
                             android:layout_centerVertical="true"
                             android:background="@null"
                             android:gravity="start"
-                            android:hint="@string/description"
+                            android:hint="Description"
                             android:maxLines="20"
-                            android:textColor="#000"
-                            android:autofillHints=""
-                            android:inputType="text" />
+                            android:textColor="#000" />
 
 
                     </RelativeLayout>
@@ -106,10 +101,9 @@
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:background="@null"
-                            android:hint="@string/price"
+                            android:hint="Price"
                             android:inputType="numberDecimal"
-                            android:textColor="#000"
-                            android:autofillHints="" />
+                            android:textColor="#000" />
 
                     </RelativeLayout>
 
@@ -128,12 +122,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:hint="@string/country"
+                            android:hint="Country"
                             android:inputType="textCapWords"
-                            android:textColor="#000"
-                            android:autofillHints="" />
+                            android:textColor="#000" />
 
                     </RelativeLayout>
 
@@ -151,12 +144,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:hint="@string/state_province_region"
+                            android:hint="State/Province/Region"
                             android:inputType="textCapWords"
-                            android:textColor="#000"
-                            android:autofillHints="" />
+                            android:textColor="#000" />
 
                     </RelativeLayout>
 
@@ -174,12 +166,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:hint="@string/city"
+                            android:hint="City"
                             android:inputType="textCapWords"
-                            android:textColor="#000"
-                            android:autofillHints="" />
+                            android:textColor="#000" />
 
                     </RelativeLayout>
 
@@ -198,12 +189,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@null"
-                            android:hint="@string/your_contact_email"
+                            android:hint="Your contact email"
                             android:inputType="textEmailAddress"
-                            android:textColor="#000"
-                            android:autofillHints="" />
+                            android:textColor="#000" />
 
                     </RelativeLayout>
 
@@ -222,7 +212,7 @@
                             android:layout_marginTop="35dp"
                             android:layout_marginBottom="35dp"
                             android:background="@drawable/white_onclick_grey"
-                            android:text="@string/post" />
+                            android:text="post" />
                     </RelativeLayout>
 
                 </RelativeLayout>

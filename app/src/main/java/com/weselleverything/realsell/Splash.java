@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 public class Splash extends AppCompatActivity {
 
     private static int SPLASH_SCREEN = 4000;
@@ -42,7 +43,7 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(Splash.this,Login.class);
+                Intent intent = new Intent(Splash.this, Login.class);
                 Pair[] pairs = new Pair[2];
                 pairs[0] = new Pair<View,String>(image,"logo_image");
                 pairs[1] = new Pair<View,String>(logo,"logo_text");

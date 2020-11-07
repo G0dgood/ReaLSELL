@@ -14,8 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
+
+import java.util.Objects;
 
 
 public class SelectPhotoDialog extends DialogFragment {
@@ -70,8 +73,8 @@ public class SelectPhotoDialog extends DialogFragment {
             Log.d(TAG, "onActivityResult: image uri: " + selectedImageUri);
 
             //send the uri to PostFragment & dismiss dialog
-            mOnPhotoSelectedListener.getImagePath(selectedImageUri);
-            getDialog().dismiss();
+             mOnPhotoSelectedListener.getImagePath(selectedImageUri);
+            Objects.requireNonNull(getDialog()).dismiss();
         }
         /*
             Results when taking a new photo with camera
@@ -83,14 +86,14 @@ public class SelectPhotoDialog extends DialogFragment {
 
             //send the bitmap to PostFragment and dismiss dialog
             mOnPhotoSelectedListener.getImageBitmap(bitmap);
-            getDialog().dismiss();
+            Objects.requireNonNull(getDialog()).dismiss();
         }
     }
 
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         try{
-            mOnPhotoSelectedListener = (OnPhotoSelectedListener) getActivity();
+            mOnPhotoSelectedListener = (OnPhotoSelectedListener) getTargetFragment();
         }catch (ClassCastException e){
             Log.e(TAG, "onAttach: ClassCastException: " + e.getMessage() );
         }

@@ -9,14 +9,13 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-
 import com.weselleverything.realsell.R;
 
 
 public class UniversalImageLoader {
 
-    private static final int defaultImage = R.drawable.book_icon;
-    private Context mContext;
+    private static final int defaultImage = R.drawable.ic_baseline_android_24;
+    private final Context mContext;
 
     public UniversalImageLoader(Context context) {
         mContext = context;
@@ -33,12 +32,10 @@ public class UniversalImageLoader {
                 .imageScaleType(ImageScaleType.EXACTLY)
                 .displayer(new FadeInBitmapDisplayer(300)).build();
 
-        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(mContext)
+        return new ImageLoaderConfiguration.Builder(mContext)
                 .defaultDisplayImageOptions(defaultOptions)
                 .memoryCache(new WeakMemoryCache())
                 .diskCacheSize(100 * 1024 * 1024).build();
-
-        return configuration;
     }
 
     /**
@@ -49,7 +46,6 @@ public class UniversalImageLoader {
      * @param image
      */
     public static void setImage(String imgURL, ImageView image){
-
         ImageLoader imageLoader = ImageLoader.getInstance();
         imageLoader.displayImage(imgURL, image);
     }
