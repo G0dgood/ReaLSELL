@@ -69,6 +69,7 @@
         <string name="city">City</string>
         <string name="your_contact_email">Your contact email</string>
         <string name="post">post</string>
+    <string name="search">search</string>
 
 
 </resources>
